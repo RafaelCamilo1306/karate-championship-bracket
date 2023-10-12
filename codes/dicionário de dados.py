@@ -15,6 +15,7 @@ participantes = [
 ]
 if(participantes[0]["escola"] != participantes[1]["escola"]):
 
+    diferençaIdade=participantes[0]["idade"]-participantes[1]["idade"]
 
     if (diferençaIdade >= -1) and (diferençaIdade<=1):
 
