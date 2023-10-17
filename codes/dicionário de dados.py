@@ -8,25 +8,39 @@ participantes = [
     },
     {
         "nome": "gabriel",
-        "faixa": "azul",
+        "faixa": "Azul",
         "idade": 19,
         "escola": "cobraKai"
     }
 ]
-if(participantes[0]["escola"] != participantes[1]["escola"]):
 
-    diferençaIdade=participantes[0]["idade"]-participantes[1]["idade"]
+def verificaChave(participante, chaveamento):
+    for nomes in chaveamento:
+        if participantNome.lower() in nomes.lower():
+            return True
+    return False
 
-    if (diferençaIdade >= -1) and (diferençaIdade<=1):
+chaveamento = [""]
+participantNome=participantes[0]["nome"]
 
-        if(participantes[0]["faixa"] == participantes[1]["faixa"]):
-
-            print(participantes[0]["nome"]+" x "+participantes[1]["nome"])
-        else:
-            print("participantes não correspondem")
-    else:
-        print("participantes são de idades muito diferentes")
+if verificaChave(participantNome,chaveamento):
+    print("participante ja chaveado")
 else:
-    print("participantes são da mesma escola")
-            
+    if(participantes[0]["escola"] != participantes[1]["escola"]):
+
+        diferençaIdade=participantes[0]["idade"]-participantes[1]["idade"]
+
+        if (diferençaIdade >= -1) and (diferençaIdade<=1):
+
+            if(participantes[0]["faixa"] == participantes[1]["faixa"]):
+
+                chaveamento=[participantes[0]["nome"], participantes[1]["nome"]]
+                print(chaveamento)
+            else:
+                print("participantes não correspondem")
+        else:
+            print("participantes são de idades muito diferentes")
+    else:
+        print("participantes são da mesma escola")
+                        
 
