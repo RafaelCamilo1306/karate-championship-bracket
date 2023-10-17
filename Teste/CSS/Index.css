@@ -1,0 +1,76 @@
+
+html {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    background-color: rgb(121, 120, 120);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#button1 {
+
+    border-radius: 400px;
+    font-size: 2rem;
+    height: 6.25rem;
+    width: 15.5rem;
+    position: inherit;
+    
+}
+
+#button1:checked {
+    background-color: red;
+}
+
+#eu {
+
+width: 200px;
+
+}
+
+#conteiner-a{
+margin-top: 9rem;
+position:relative;
+border: 3px rgb(105, 23, 23) solid;
+display: inline-block;
+background-color: rgb(238, 81, 81);
+text-align: center;
+color: rgb(211, 151, 151);
+text-shadow: black 0.1em 0.1em 0.2em
+}
+
+#conteiner-b{
+
+position:relative;
+border: 3px rgb(43, 59, 150) solid;
+text-align: center;
+display: inline-block;
+color: rgb(211, 151, 151);
+text-shadow: black 0.1em 0.1em 0.2em
+    
+}
+
+input{
+
+    width: 97%;
+
+}
+
+#enviar {
+
+color: red;
+display: inline-block;
+width: 100%;
+
+}
+
+#titulo{
+
+text-align: center;
+font-size: larger;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color:rgb(211, 151, 151);
+text-shadow: black 0.1em 0.1em 0.2em
+}

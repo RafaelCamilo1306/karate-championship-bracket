@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Cadastro.css" media="screen"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>Cadastro de Aluno</title>
+</head>
+<body>
+  <script>
+   const divparaSumir=document.getElementsByClassName("login")
+
+    document.getElementById("#alunos").addEventListener('click', event => {
+      divparaSumir.style.display="none"
+    });
+
+  </script>
+    
+<div class="formConteiner">
+  <div class="login">
+    <h2 class="active"> Participante </h2>
+
+    <h2 class="nonactive" href="HTML/CadInst.html" id="alunos"> Instituição </h2>
+    <form>
+    
+      
+      <span>Nome</span>
+      <input type="text" class="text" name="Nome">
+      <br>
+      <span>Idade</span>
+      <input type="text" class="text" name="Idade">
+    <br>
+
+    <span class="spanOfSelect">Faixa(graduação):</span> <br>
+    <select type="text" name="faixa">
+        <option>Branca</option>
+        <option>Amarela</option>
+        <option>Vermelha</option>
+        <option>Laranja</option>
+        <option>Verde</option>
+        <option>Roxa</option>
+        <option>Marrom</option>
+        <option>Preta</option>
+    </select><br> 
+    <span>Instituição</span>
+      <input type="text" class="text" name="instituicao">
+      <br>
+      
+      <button class="signin"> Inserir Dados </button>
+
+
+      <hr>
+
+    </form>
+
+  </div>
+
+
+  <div class="g">
+    <h2 class="nonactive"> Participante </h2>
+
+    <h2 class="active" href="HTML/CadInst.html"> Instituição </h2>
+    <form>
+    
+      
+      <span>Nome</span>
+      <input type="text" class="text" name="Nome">
+      <br>
+      <span>Idade</span>
+      <input type="text" class="text" name="Idade">
+    <br>
+
+    <span class="spanOfSelect">Faixa(graduação):</span> <br>
+    <select type="text" name="faixa">
+        <option>Branca</option>
+        <option>Amarela</option>
+        <option>Vermelha</option>
+        <option>Laranja</option>
+        <option>Verde</option>
+        <option>Roxa</option>
+        <option>Marrom</option>
+        <option>Preta</option>
+    </select><br> 
+    <span>Instituição</span>
+      <input type="text" class="text" name="instituicao">
+      <br>
+      
+      <button class="signin"> Inserir Dados </button>
+
+
+      <hr>
+
+    </form>
+
+  </div>
+</div>
+</body>
+</html>
